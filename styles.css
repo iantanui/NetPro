@@ -7,29 +7,36 @@ body {
 }
 
 header {
+  margin-top: 0;
   background-color: white;
   color: black;
   text-align: center;
 }
 
-nav .logo {
-  width: 50px;
-  align-self: start;
+#logo {
+  width: 80px;
+  border-radius: 50%;
+  vertical-align: top;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding: 16px;
   background-color: white;
   text-align: center;
   justify-content: space-between;
 }
 
+nav ul li {
+  display: inline;
+  padding: 16px;
+}
+
 nav ul li a {
   color: black;
-  padding: 16px;
+  padding: 16px 20px;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -38,15 +45,59 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-main {
-  padding: 16px;
+.home {
+  background-color: #bebebe;
+  padding: 10px;
+}
+
+.home-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home-about .about {
+  flex: 1;
+  text-align: left;
+  padding: 8px;
+}
+
+.home-about .home-image {
+  flex: 1;
+  padding: 10px;
+}
+
+.home-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 3%;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact {
+  padding: 60px;
+  display: flex;
+}
+
+.info {
+  flex: 2;
+}
+
+.details {
+  flex: 1;
+  padding: 10px;
 }
 
 footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 6px;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -57,21 +108,34 @@ h2 {
   text-align: center;
 }
 
-table {
-  width: 100%;
+h3 {
+  color: black;
+  text-align: left;
+}
+.goal {
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-section table {
+  padding: 16px;
+  width: 90%;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #fff;
+  box-shadow: 0 0 10px #bebebe, -5px -5px 10px #fff;
 }
 
-table,
-th,
-td {
-  border: 1px solid #ddd;
+.service-section table,
+.service-section th,
+.service-section td {
   border-radius: 4px;
-  padding: 10px;
-}
-
-th {
-  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
   text-align: center;
 }
