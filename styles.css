@@ -50,7 +50,7 @@ nav ul li a:hover {
 }
 
 header {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .header-content {
@@ -114,32 +114,31 @@ header {
   background-color: #ddd;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   justify-content: space-between;
 }
 
 .services-intro {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
   padding: 0 16px;
 }
 
-.services-intro h2  {
-  text-align: left;
+.services-intro h2 {
+  text-align: center;
   color: rgb(179, 121, 14);
 }
 
 .services-details {
   display: flex;
-  justify-content: left;
-  padding-left: 16px;
+  justify-content: space-around;
+  padding: 16px;
   align-items: start;
-  gap: 30px;
 }
 
-.services-details h4{
+.services-details h4 {
+  color: rgb(179, 121, 14);
   text-align: center;
 }
 
@@ -147,6 +146,7 @@ header {
   position: relative;
   padding-left: 16px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .services {
@@ -224,22 +224,22 @@ footer {
   font-weight: bolder;
 }
 
-.service-section {
+.services-table {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.service-section table {
-  padding: 16px;
-  width: 90%;
+.services-table table {
+  width: 70%;
   border-radius: 10px;
   box-shadow: 0 0 10px #bebebe, -5px -5px 10px #fff;
+  padding-bottom: 10px;
 }
 
-.service-section table,
-.service-section th,
-.service-section td {
+.services-table table,
+.services-table th,
+.services-table td {
   border-radius: 4px;
   border: 1px solid #ddd;
   padding: 20px;
@@ -277,5 +277,21 @@ footer {
   .services-links {
     max-width: none;
     text-align: center;
+  }
+
+  .services-intro {
+    text-align: left;
+  }
+
+  .services-intro h2 {
+    text-align: left;
+  }
+
+  .services-details {
+    flex-direction: column;
+  }
+
+  table {
+    width: 1005;
   }
 }
