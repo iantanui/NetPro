@@ -81,10 +81,9 @@ header {
   text-align: center;
 }
 
-.header-about h3  {
+.header-about h3 {
   color: rgb(179, 121, 14);
 }
-
 
 .header-button {
   padding: 10px 20px;
@@ -119,12 +118,51 @@ header {
   align-items: center;
 }
 
-.offer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.services {
   padding-bottom: 100px;
+  text-align: center;
+}
+
+.services h4 {
+  font-size: 18px;
+  color: rgb(179, 121, 14);
+}
+
+.services-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.services-list,
+.services-links {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20px;
+}
+
+
+
+.services-list ul li {
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.services-links {
+  margin-top: 10px;
+}
+
+.services-links a {
+  display: block;
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.services-links a:hover {
+  text-decoration: none;
 }
 
 .contact {
@@ -150,7 +188,6 @@ footer {
   width: 100%;
   bottom: 0;
 }
-
 
 .goal {
   color: black;
@@ -197,11 +234,18 @@ footer {
     width: 50%;
   }
 
-  .offer {
-    margin-top: 0;
-    padding: 16px;
-    padding-bottom: 100px;
-    align-items: flex-start;
-    text-align: left;
+  .services h1 {
+    margin-left: 20px;
+    text-align: start;
+  }
+
+  .services-content {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .services-list, .services-links {
+    max-width: none;
+    text-align: center;
   }
 }
