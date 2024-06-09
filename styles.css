@@ -110,12 +110,43 @@ header {
   height: 100%;
 }
 
-.main {
-  padding: 16px;
-  min-height: calc(100vh - 130px);
+.services-header {
+  background-color: #ddd;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.services-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  padding: 0 16px;
+}
+
+.services-intro h2  {
+  text-align: left;
+  color: rgb(179, 121, 14);
+}
+
+.services-details {
+  display: flex;
+  justify-content: left;
+  padding-left: 16px;
+  align-items: start;
+  gap: 30px;
+}
+
+.services-details h4{
+  text-align: center;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 10px;
 }
 
 .services {
@@ -142,8 +173,6 @@ header {
   max-width: 400px;
   margin: 0 20px;
 }
-
-
 
 .services-list ul li {
   margin-bottom: 10px;
@@ -244,7 +273,8 @@ footer {
     align-items: start;
   }
 
-  .services-list, .services-links {
+  .services-list,
+  .services-links {
     max-width: none;
     text-align: center;
   }
