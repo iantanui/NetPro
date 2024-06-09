@@ -204,12 +204,6 @@ footer {
   bottom: 0;
 }
 
-.goal {
-  color: black;
-  font-size: larger;
-  font-weight: bolder;
-}
-
 .services-table {
   display: flex;
   flex-direction: column;
@@ -250,22 +244,57 @@ table {
 }
 
 .contact-header p {
+  color: black;
+  margin-left: 100px;
+}
+
+.contact-header h1 {
   color: rgb(179, 121, 14);
-  margin-left: 30px;
-}
-
-.contact-header h1  {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 100px;
 }
 
-.info {
+.contact-header h2 {
+  text-align: left;
+  color: rgb(179, 121, 14);
+}
+
+.contact-header .info {
   flex: 2;
 }
 
-.details {
+.contact-header .details {
   flex: 1;
-  padding: 10px;
+  padding: 16px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-action {
+  text-align: center;
+  flex: 1 1 45%;
+  max-width: 400px;
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 0 0 10px #bebebe, -5px -5px 10px #fff;
+}
+
+.contact-button {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -319,5 +348,30 @@ table {
 
   .services-table table {
     width: 90%;
+  }
+
+  .contact-header {
+    flex-direction: column;
+  }
+
+  .contact-header p {
+    margin-left: 10px;
+  }
+
+  .contact-header h1 {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .contact-header h2 {
+    text-align: center;
+  }
+
+  .contact-action {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 70px;
+    justify-content: center;
   }
 }
