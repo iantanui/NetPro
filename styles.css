@@ -194,20 +194,6 @@ header {
   text-decoration: none;
 }
 
-.contact {
-  padding: 60px;
-  display: flex;
-}
-
-.info {
-  flex: 2;
-}
-
-.details {
-  flex: 1;
-  padding: 10px;
-}
-
 footer {
   background-color: black;
   color: white;
@@ -253,6 +239,33 @@ footer {
 table {
   border-collapse: collapse;
   margin-top: 30px;
+}
+
+.contact-header {
+  background-color: #ddd;
+  text-align: left;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-header p {
+  color: rgb(179, 121, 14);
+  margin-left: 30px;
+}
+
+.contact-header h1  {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.info {
+  flex: 2;
+}
+
+.details {
+  flex: 1;
+  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
