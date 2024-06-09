@@ -228,16 +228,15 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .services-table table {
   width: 70%;
   border-radius: 10px;
   box-shadow: 0 0 10px #bebebe, -5px -5px 10px #fff;
-  padding-bottom: 10px;
 }
 
-.services-table table,
 .services-table th,
 .services-table td {
   border-radius: 4px;
@@ -291,7 +290,11 @@ footer {
     flex-direction: column;
   }
 
-  table {
-    width: 1005;
+  .services-table {
+    padding-bottom: 120px;
+  }
+
+  .services-table table {
+    width: 90%;
   }
 }
