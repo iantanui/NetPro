@@ -6,6 +6,7 @@ body {
   padding: 0;
   overflow: auto;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -44,6 +45,7 @@ nav ul li a:hover {
 }
 
 header {
+  margin-top: 0;
   padding: 16px;
 }
 
@@ -52,11 +54,12 @@ header {
 }
 
 .header-content {
-  height: 50vh;
+  margin: 16px;
+  height: 60vh;
   align-items: stretch;
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -66,7 +69,6 @@ header {
 }
 
 .header-about {
-  padding: 16px;
   margin-left: 4px;
   display: flex;
   flex-direction: column;
@@ -190,6 +192,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .header-content {
+    margin: 0;
     flex-direction: column;
     height: auto;
   }
